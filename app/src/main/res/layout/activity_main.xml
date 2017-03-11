@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eczom.eczomframe.activity.MainActivity">
+
+    <include layout="@layout/title" />
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#DDDDDD" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/tab_style"
+            android:id="@+id/rb_e"
+            android:drawableTop="@drawable/rb_e_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/rb_c_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_z"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/rb_z_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_o"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/rb_o_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_m"
+            style="@style/tab_style"
+            android:drawableTop="@drawable/rb_m_selector" />
+
+    </RadioGroup>
+
+</LinearLayout>
